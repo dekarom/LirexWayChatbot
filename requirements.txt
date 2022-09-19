@@ -1,2 +1,8 @@
 ChatterBot==1.0.5
 Flask==2.2.2
+python-dateutil=2.8
+pytz
+pyyaml >=3.12,<4.0
+six >=1.5
+spacy=2.1
+sqlalchemy=1.3
