@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=“en”>
+  <head>
+    <title>LirexWay Chatbot</title>
+    <link rel="icon" type="image/x-icon" href="../static/favi.ico">
+  </head>
+  <style>
+    
+    body{
+      background-image: url("../static/bg.png");
+      background-position: center;
+    }
+
+    h1 { 
+        font: 2em verdana;
+        color: #003375
+      
+    }
+
+    label {
+      border: 1px;
+      border-style: solid;
+      border-radius: 5px;
+      padding: 5px;
+      font: 1em verdana;
+    }
+
+    button {
+      padding: 2px;
+      border: 2px;
+      font: 1em verdana;
+      border-radius: 4px;
+      color:white;
+      background-color: #32c712;
+      
+    }
+
+    p {
+      font: 1em verdana;
+      border-radius: 4px;
+    }
+
+    .pair  {
+      border: 2px black solid;
+      height: 250px;
+      width: 250px;
+      
+    }
+    input {
+      font: 1em verdana;
+      border-radius: 4px;
+    }  
+
+    .container {
+      border: 2px solid;
+      background-color: #1394e9;
+      color: white;
+      padding: 3px;
+      border-radius: 4px;
+      margin: 5px;
+      width: auto;
+    }
+
+
+  
+  </style>
+  <body>
+    <h1 >Welcome to the LirexWay Chatbot!</h1>
+
+    <form action="{{ url_for("writeToPage")}}" method="post">
+
+      <label for="botOutput" style="background-color:#1394e9 ; color:white">Bot Response:</label>
+
+      <p>{{ output }}</p>
+     
+      <br>
+      <br>
+      <br>
+      <label for="request" style="background-color: #32c712; color:white">Your Message:</label>
+      <br>
+      <br>
+      <input type="text" id="request" name="userText" placeholder="request">
+      <button type="submit">Text Me!</button>
+    </form>
+  </body>
+</html>
