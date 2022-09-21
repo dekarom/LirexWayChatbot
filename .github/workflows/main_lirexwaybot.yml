@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'LirexWayBot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_05D4A54FB5C645ADBB602907584F047A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E81240B761574673AE5E100CBD8749A6 }}
